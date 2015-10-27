@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A80362D-5215-428C-BD66-C3BCA90D9DF4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Phosphaze</RootNamespace>
+    <AssemblyName>Phosphaze</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <MonoGameContentBuilderExe>
+    </MonoGameContentBuilderExe>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\WorkStuff\Documents\PhosPhaze Publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Windows\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Windows\Release\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>0E5594A22D42220F08E2939F288C94D4E9741DE8</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Phosphaze_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Core\Animation\Animation.cs" />
+    <Compile Include="Core\Animation\AnimationState.cs" />
+    <Compile Include="Core\Animation\AniMLException.cs" />
+    <Compile Include="Core\Animation\AniMLReader.cs" />
+    <Compile Include="Core\Collision\CircleCollider.cs" />
+    <Compile Include="Core\Collision\CollisionChecker.cs" />
+    <Compile Include="Core\Collision\CollisionType.cs" />
+    <Compile Include="Core\Collision\ICollidable.cs" />
+    <Compile Include="Core\Collision\LineSegmentCollider.cs" />
+    <Compile Include="Core\Collision\ParticleCollider.cs" />
+    <Compile Include="Core\Collision\RayCollider.cs" />
+    <Compile Include="Core\Collision\RectCollider.cs" />
+    <Compile Include="Core\Dml\Builtins\Math.cs" />
+    <Compile Include="Core\Dml\Builtins\MiscFunctions.cs" />
+    <Compile Include="Core\Dml\Builtins\FunctionalMath.cs" />
+    <Compile Include="Core\Dml\Builtins\TimeCommands.cs" />
+    <Compile Include="Core\Dml\Builtins\VectorMath.cs" />
+    <Compile Include="Core\Dml\Component.cs" />
+    <Compile Include="Core\Dml\DmlBullet.cs" />
+    <Compile Include="Core\Dml\DmlBulletFactory.cs" />
+    <Compile Include="Core\Dml\DmlSystem.cs" />
+    <Compile Include="Core\Dml\DmlTimeline.cs" />
+    <Compile Include="Core\Dml\DmlTimestamp.cs" />
+    <Compile Include="Core\Dml\Parse\AbstractParser.cs" />
+    <Compile Include="Core\Dml\Parse\BehavioursDict.cs" />
+    <Compile Include="Core\Dml\Parse\Behaviours\Behaviour.cs" />
+    <Compile Include="Core\Dml\Parse\Behaviours\BehaviourException.cs" />
+    <Compile Include="Core\Dml\Parse\Behaviours\BurstSpawn.cs" />
+    <Compile Include="Core\Dml\Parse\Behaviours\Gravity.cs" />
+    <Compile Include="Core\Dml\Parse\Behaviours\Kill.cs" />
+    <Compile Include="Core\Dml\Parse\Behaviours\KillIfOffscreen.cs" />
+    <Compile Include="Core\Dml\Parse\Behaviours\MoveTo.cs" />
+    <Compile Include="Core\Dml\Parse\Behaviours\MultiSpawn.cs" />
+    <Compile Include="Core\Dml\Parse\Behaviours\RadialSpawn.cs" />
+    <Compile Include="Core\Dml\Parse\Behaviours\RotateAround.cs" />
+    <Compile Include="Core\Dml\Parse\Behaviours\RotateDirection.cs" />
+    <Compile Include="Core\Dml\Parse\Behaviours\Spawn.cs" />
+    <Compile Include="Core\Dml\Parse\Behaviours\TransitionSpeed.cs" />
+    <Compile Include="Core\Dml\Parse\BuiltinsDict.cs" />
+    <Compile Include="Core\Dml\Parse\BulletBuilder.cs" />
+    <Compile Include="Core\Dml\Parse\CodeBlock.cs" />
+    <Compile Include="Core\Dml\Parse\DmlFileReader.cs" />
+    <Compile Include="Core\Dml\Parse\ExpressionBuilder.cs" />
+    <Compile Include="Core\Dml\Parse\DmlFunction.cs" />
+    <Compile Include="Core\Dml\Parse\Instruction.cs" />
+    <Compile Include="Core\Dml\Parse\DmlObject.cs" />
+    <Compile Include="Core\Dml\Parse\DmlParser.cs" />
+    <Compile Include="Core\Dml\Parse\InstructionCleaner.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\AssignBulletBound.cs" />
+    <Compile Include="Core\Dml\Parse\DmlSyntaxError.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\AssignIntrinsicBulletProperty.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\BinaryAnd.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\BinaryEq.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\BinaryGt.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\BinaryGtEq.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\BinaryLt.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\BinaryLtEq.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\BinaryNeq.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\BinaryOr.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\JumpIfLessThanOrEqual.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\JumpIfFalse.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\Label.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\LoadIntrinsicBulletProperty.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\UnaryNot.cs" />
+    <Compile Include="Core\Dml\Parse\NamespaceType.cs" />
+    <Compile Include="Core\Dml\Parse\TimelineBuilder.cs" />
+    <Compile Include="Core\Dml\Parse\Tokenizer.cs" />
+    <Compile Include="Core\Dml\Parse\DmlTokens.cs" />
+    <Compile Include="Core\Dml\Parse\DmlType.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\AssignGlobal.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\AssignLocal.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\BinaryAdd.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\BinaryDiv.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\BinaryMod.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\BinaryMul.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\BinaryPow.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\BinarySub.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\CallFunction.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\LoadConstant.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\LoadGlobal.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\LoadInstanceBound.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\LoadLocal.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\UnaryAbs.cs" />
+    <Compile Include="Core\Dml\Parse\Instructions\UnaryNeg.cs" />
+    <Compile Include="Core\Dml\Parse\ParserError.cs" />
+    <Compile Include="Core\EndScene.cs" />
+    <Compile Include="Core\ExitScene.cs" />
+    <Compile Include="Core\Globals.cs" />
+    <Compile Include="Core\InitialScene.cs" />
+    <Compile Include="Core\LevelScene.cs" />
+    <Compile Include="Core\libwav\Audio.cs" />
+    <Compile Include="Core\libwav\DFTransform.cs" />
+    <Compile Include="Core\libwav\FFTransform.cs" />
+    <Compile Include="Core\libwav\int24.cs" />
+    <Compile Include="Core\libwav\libwav.cs" />
+    <Compile Include="Core\libwav\libwavPINVOKE.cs" />
+    <Compile Include="Core\libwav\memblock.cs" />
+    <Compile Include="Core\libwav\StatBeatDetection.cs" />
+    <Compile Include="Core\libwav\Stereo.cs" />
+    <Compile Include="Core\libwav\SWIGTYPE_p_double.cs" />
+    <Compile Include="Core\libwav\SWIGTYPE_p_std__valarrayT_std__complexT_double_t_t.cs" />
+    <Compile Include="Core\libwav\SWIGTYPE_p_unsigned_char.cs" />
+    <Compile Include="Core\libwav\SWIGTYPE_p_WAVEFORMATEX.cs" />
+    <Compile Include="Core\libwav\SWIGTYPE_p_WAVEFORMATEXTENSIBLE.cs" />
+    <Compile Include="Core\libwav\Wave.cs" />
+    <Compile Include="Core\libwav\WAVE_CHUNK.cs" />
+    <Compile Include="Core\libwav\WAVE_H.cs" />
+    <Compile Include="Core\libwav\WAVE_H_EXTENDED.cs" />
+    <Compile Include="Core\libwav\WAVE_H_PCM.cs" />
+    <Compile Include="Core\MapMaker.cs" />
+    <Compile Include="Core\SceneElements\FadingSceneButton.cs" />
+    <Compile Include="Core\SceneElements\SceneButton.cs" />
+    <Compile Include="Core\SceneElements\SceneSlider.cs" />
+    <Compile Include="Core\SceneElements\SceneStar.cs" />
+    <Compile Include="Core\SceneElements\SceneText.cs" />
+    <Compile Include="Core\SceneElements\SceneTexture.cs" />
+    <Compile Include="Core\SceneElements\SongButton.cs" />
+    <Compile Include="Core\SceneElements\Visualizer.cs" />
+    <Compile Include="Core\ShipBullet.cs" />
+    <Compile Include="Core\SongFolderOrganizer.cs" />
+    <Compile Include="Core\UserInfoLoader.cs" />
+    <Compile Include="Core\Utils\ContainerExtensions.cs" />
+    <Compile Include="Core\Utils\DrawUtils.cs" />
+    <Compile Include="Core\Utils\ExceptionUtils.cs" />
+    <Compile Include="Core\Utils\GeometryUtils.cs" />
+    <Compile Include="Core\Utils\InputUtils.cs" />
+    <Compile Include="Core\Utils\SpecialFunctions.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Core\MainMenuScene.cs" />
+    <Compile Include="Core\Options.cs" />
+    <Compile Include="Core\OptionsScene.cs" />
+    <Compile Include="Core\Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Core\Scene.cs" />
+    <Compile Include="Core\SceneManager.cs" />
+    <Compile Include="Core\SongScene.cs" />
+    <Compile Include="Core\StarsScene.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MSBuildProgramFiles32)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Phosphaze_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"$(SolutionDir)\..\Libwav RTE Files"\cp.bat $(OutDir)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

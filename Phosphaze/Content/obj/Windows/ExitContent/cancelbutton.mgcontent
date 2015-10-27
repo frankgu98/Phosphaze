@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>F:/JAVA/Phosphaze-v2/Phosphaze/Phosphaze/Content/ExitContent/cancelbutton.png</SourceFile>
+  <SourceTime>2015-06-09T17:36:20-04:00</SourceTime>
+  <DestFile>F:/JAVA/Phosphaze-v2/Phosphaze/Phosphaze/Content/bin/Windows/ExitContent/cancelbutton.xnb</DestFile>
+  <DestTime>2015-06-12T12:10:52-04:00</DestTime>
+  <Importer>TextureImporter</Importer>
+  <ImporterTime>2015-03-15T23:01:46-04:00</ImporterTime>
+  <Processor>TextureProcessor</Processor>
+  <ProcessorTime>2015-03-15T23:01:46-04:00</ProcessorTime>
+  <Parameters>
+    <Key>ColorKeyColor</Key>
+    <Value>255,0,255,255</Value>
+  </Parameters>
+  <Parameters>
+    <Key>ColorKeyEnabled</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>GenerateMipmaps</Key>
+    <Value>False</Value>
+  </Parameters>
+  <Parameters>
+    <Key>PremultiplyAlpha</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>ResizeToPowerOfTwo</Key>
+    <Value>False</Value>
+  </Parameters>
+  <Parameters>
+    <Key>TextureFormat</Key>
+    <Value>Color</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>
